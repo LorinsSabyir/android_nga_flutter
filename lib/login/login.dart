@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:android_nga_flutter/components/textfield.dart';
+import 'package:android_nga_flutter/components/button.dart';
 
 import 'package:android_nga_flutter/signup/signup.dart';
 
@@ -25,6 +26,8 @@ class _LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 50),
+
+              // TODO change logo
               const Icon(
                 Icons.lock,
                 size: 100,
@@ -40,7 +43,7 @@ class _LoginState extends State<Login> {
               ),
               const SizedBox(height: 50),
 
-              // add Username TextField
+              // Username TextField
               Textfield(
                 controller: userController,
                 hintText: 'Username',
@@ -54,7 +57,7 @@ class _LoginState extends State<Login> {
               ),
               const SizedBox(height: 20),
 
-              // TODO add Password TextField
+              // Password TextField
               Textfield(
                 controller: passController,
                 hintText: 'Password',
@@ -69,7 +72,10 @@ class _LoginState extends State<Login> {
               const SizedBox(height: 15),
 
               // Sign In Button
-              // TODO add login button
+              Button(
+                // TODO add login function
+                // onTap: loginUser,
+              ),
               const SizedBox(height: 30),
 
               // Sign Up Option
@@ -79,7 +85,6 @@ class _LoginState extends State<Login> {
                   const Text("Don't Have an Account?"),
                   const SizedBox(width: 6),
                   GestureDetector(
-                    // TODO Add sign up link
                     onTap: () {
                       Navigator.push(
                         context,
