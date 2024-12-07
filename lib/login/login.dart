@@ -69,14 +69,14 @@ class _LoginState extends State<Login> {
                   return null;
                 },
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 30),
 
               // Sign In Button
               Button(
                 // TODO add login function
                 // onTap: loginUser,
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 20),
 
               // Sign Up Option
               Row(

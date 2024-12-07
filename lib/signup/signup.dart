@@ -138,7 +138,7 @@ class _SignupState extends State<Signup> {
                     // controller: widget.controller,
                     // formKey: _formKey, // Pass the form key
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 20),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
