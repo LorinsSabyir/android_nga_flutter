@@ -20,12 +20,7 @@ class Submitbutton extends StatelessWidget {
         if (formKey.currentState!.validate()) {
           // Trigger sign-up logic
           // TODO add controller function
-          // controller.createUser(
-          //   controller.userModel.firstName ?? '',
-          //   controller.userModel.lastName ?? '',
-          //   controller.userModel.userName ?? '',
-          //   controller.userModel.passWord ?? '',
-          // );
+          
 
           // Show success message
           ScaffoldMessenger.of(context).showSnackBar(

@@ -1,16 +1,16 @@
 import 'package:android_nga_flutter/components/submitButton.dart';
 import 'package:android_nga_flutter/components/textfield.dart';
+import 'package:android_nga_flutter/components/button.dart';
 
 import 'package:flutter/material.dart';
-import 'package:android_nga_flutter/entity/userCont.dart';
 import 'package:android_nga_flutter/login/login.dart';
 
 class Signup extends StatefulWidget {
-  final UserCont controller;
+  // final UserCont controller;
 
   const Signup({
     super.key,
-    required this.controller,
+    // required this.controller,
   });
 
   @override
@@ -134,9 +134,9 @@ class _SignupState extends State<Signup> {
                   const SizedBox(height: 30),
 
                   // TODO add Sign Up Button
-                  Submitbutton(
-                    controller: widget.controller,
-                    formKey: _formKey, // Pass the form key
+                  Button(
+                    // controller: widget.controller,
+                    // formKey: _formKey, // Pass the form key
                   ),
                   const SizedBox(height: 30),
 
