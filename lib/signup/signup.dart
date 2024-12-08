@@ -16,6 +16,8 @@ class Signup extends StatelessWidget {
   // Form key for validation
   final _formKey = GlobalKey<FormState>();
 
+  Signup({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -147,7 +149,7 @@ class Signup extends StatelessWidget {
                           // Navigate to login page
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (_) => Login()),
+                            MaterialPageRoute(builder: (_) => const Login()),
                           );
                         } catch (e) {
                           print('Error during registration: $e'); // Debugging output
@@ -166,13 +168,13 @@ class Signup extends StatelessWidget {
                       }
                     },
                     child: Container(
-                      padding: EdgeInsets.all(25),
+                      padding: const EdgeInsets.all(25),
                       // margin: EdgeInsets.symmetric(horizontal: 25),
                       decoration: BoxDecoration(
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'Sign Up',
                           style: TextStyle(
@@ -196,7 +198,7 @@ class Signup extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (_) => Login()),
+                            MaterialPageRoute(builder: (_) => const Login()),
                           );
                         },
                         child: const Text(
